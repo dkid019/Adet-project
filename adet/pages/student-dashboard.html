@@ -1,0 +1,87 @@
+<div class="dashboard-page active" id="page-student-dash">
+  <header class="dash-header">
+    <div class="dash-brand">
+      <div class="dash-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+        </svg>
+      </div>
+      Study Works | Student
+    </div>
+    <div class="search-wrap" style="max-width: 300px;">
+        <input type="text" placeholder="Search my courses...">
+    </div>
+  </header>
+
+  <div class="dash-body">
+    <aside class="sidebar">
+      <div class="profile-section">
+        <div class="avatar" style="background: #b8ccb8;">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <div class="profile-name">Student Name</div>
+        <div class="profile-role">Enrolled Student</div>
+        <button class="btn-view-profile">View Progress</button>
+      </div>
+
+      <hr class="sidebar-divider">
+
+      <nav class="sidebar-menu">
+        <a class="sidebar-item active">
+          <span class="si-icon">📖</span> My Courses
+        </a>
+        <a class="sidebar-item">
+          <span class="si-icon">✍️</span> My Quizzes
+        </a>
+        <a class="sidebar-item">
+          <span class="si-icon">🏅</span> Grades & Certificates
+        </a>
+      </nav>
+
+      <button class="logout-btn" onclick="openLogoutModal()">
+        <span>🚪</span> Log Out
+      </button>
+    </aside>
+
+    <main class="dash-main">
+      <div class="section-header">
+        <h2>My Learning Journey</h2>
+      </div>
+
+      <div class="classes-grid">
+        <div class="class-card" onclick="loadPage('course-view')">
+          <div class="class-thumb" style="background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400') center/cover;">
+          </div>
+          <div class="class-info">
+            <h3>Web Development 101</h3>
+            <p>Instructor: John Doe • 45% Complete</p>
+          </div>
+        </div>
+
+        <div class="class-card">
+          <div class="class-thumb" style="background: url('https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400') center/cover;">
+          </div>
+          <div class="class-info">
+            <h3>Database Systems</h3>
+            <p>Instructor: Jane Smith • 10% Complete</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="lm-section">
+        <h2>Upcoming Deadlines</h2>
+        <div class="lm-grid">
+           <div class="lm-card">
+             <div class="lm-info">
+               <h3>Quiz 1: HTML Basics</h3>
+               <p>Due: Tomorrow, 11:59 PM</p>
+             </div>
+           </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

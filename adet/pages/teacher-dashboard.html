@@ -1,0 +1,86 @@
+<div class="dashboard-page active" id="page-teacher-dash">
+  <header class="dash-header">
+    <div class="dash-brand">
+      <div class="dash-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+        </svg>
+      </div>
+      Study Works
+    </div>
+    <nav class="dash-nav">
+      <a class="active">Dashboard</a>
+      <a>My Schedule</a>
+      <a>Resources</a>
+    </nav>
+  </header>
+
+  <div class="dash-body">
+    <aside class="sidebar">
+      <div class="profile-section">
+        <div class="avatar">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <div class="profile-name">Instructor Name</div>
+        <div class="profile-role">Senior Lecturer</div>
+        <button class="btn-view-profile">Edit Profile</button>
+      </div>
+
+      <hr class="sidebar-divider">
+
+      <nav class="sidebar-menu">
+        <a class="sidebar-item active">
+          <span class="si-icon">🏠</span> My Classes
+        </a>
+        <a class="sidebar-item">
+          <span class="si-icon">📚</span> Materials
+        </a>
+        <a class="sidebar-item">
+          <span class="si-icon">📝</span> Quizzes
+        </a>
+        <a class="sidebar-item">
+          <span class="si-icon">📊</span> Grades
+        </a>
+      </nav>
+
+      <button class="logout-btn" onclick="openLogoutModal()">
+        <span>🚪</span> Log Out
+      </button>
+    </aside>
+
+    <main class="dash-main">
+      <div class="section-header">
+        <h2>My Active Classes</h2>
+        <div class="search-filter">
+          <input type="text" placeholder="Search classes...">
+        </div>
+      </div>
+
+      <div class="classes-grid">
+        <div class="class-card" onclick="loadPage('class-detail')">
+          <div class="class-thumb">
+             <button class="class-menu-btn">⋮</button>
+          </div>
+          <div class="class-info">
+            <h3>Web Development 101</h3>
+            <p>32 Students • 12 Lessons</p>
+          </div>
+        </div>
+
+        <div class="class-card">
+          <div class="class-thumb"></div>
+          <div class="class-info">
+            <h3>Database Systems</h3>
+            <p>28 Students • 8 Lessons</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fab-container">
+        <div class="fab-tooltip">Create New Class</div>
+        <button class="fab" onclick="loadPage('create-class')">+</button>
+      </div>
+    </main>
+  </div>
+</div>

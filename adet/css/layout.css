@@ -1,0 +1,15 @@
+.page {
+  min-height: 100vh;
+}
+
+.landing-header {
+  background: var(--teal);
+  padding: 12px 32px;
+  color: white;
+}
+
+.landing-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}

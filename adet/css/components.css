@@ -1,0 +1,12 @@
+.btn-primary {
+  background: black;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.auth-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+}

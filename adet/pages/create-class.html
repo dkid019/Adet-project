@@ -1,0 +1,49 @@
+<div class="dashboard-page active">
+  <header class="dash-header">
+    <div class="dash-brand">
+      <div class="dash-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+        </svg>
+      </div>
+      Study Works | Creator
+    </div>
+    <button class="back-btn" style="color: white; margin-bottom: 0;" onclick="loadPage('teacher-dashboard')">← Back to Dashboard</button>
+  </header>
+
+  <div class="create-class-wrap">
+    <div class="create-class-card">
+      <h1>Create New Class</h1>
+      
+      <div class="cc-group">
+        <label>Class Name</label>
+        <input type="text" id="class-name" placeholder="e.g. Introduction to PHP">
+      </div>
+
+      <div class="cc-group">
+        <label>Subject Category</label>
+        <select id="class-category">
+          <option value="web-dev">Web Development</option>
+          <option value="database">Database Systems</option>
+          <option value="network">Networking</option>
+          <option value="linux">Linux Administration</option>
+        </select>
+      </div>
+
+      <div class="cc-group">
+        <label>Schedule / Section</label>
+        <input type="text" id="class-schedule" placeholder="e.g. MWF 9:00 AM - 10:30 AM">
+      </div>
+
+      <div class="cc-group">
+        <label>Class Description</label>
+        <input type="text" id="class-desc" placeholder="Brief overview of the course...">
+      </div>
+
+      <div style="margin-top: 30px;">
+        <button class="btn-primary" style="background: var(--navy);" onclick="handleCreateClass()">Create Class Instance</button>
+      </div>
+    </div>
+  </div>
+</div>
